@@ -1,0 +1,669 @@
+@charset 'UTF-8';
+
+/* Bootstrap overrides */
+h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Main CSS */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.snip1226 {
+  font-family: 'Didact Gothic';
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-content: center;
+}
+.snip1226 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1226 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 0.75em;
+  overflow: hidden;
+}
+.snip1226 a {
+  padding: 0.3em 0;
+  color: #b9003e;
+  justify-content: center;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.snip1226 a:before,
+.snip1226 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1226 a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #b9003e;
+}
+.snip1226 a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: black;
+  white-space: nowrap;
+}
+.snip1226 li:hover a,
+.snip1226 .current a {
+  transform: translateY(100%);
+}
+
+/* Demo purposes only */
+/*body {
+  background-color: #212121;
+  padding: 50px 0;
+}*/
+
+.menu-hero {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: white;
+  padding: 30px;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  min-width: 5px;
+}
+
+.menu-bar {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+
+.menu-logo {
+  height: 100px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-button {
+  justify-content: center;
+  font-size: 1.7em;
+  height: 120px;
+  width: 120px;
+  color: #b9003e;
+  background-color: inherit;
+  font-family: 'Didact Gothic';
+  align-items: center;
+  border: none;
+}
+
+.main-button:hover {
+  border-color: black;
+  background: rgba(255, 175, 171, 0.8);
+  /*border-radius: 50%;*/
+  color: black;
+}
+
+#carousel-container {
+  padding: 0;
+}
+
+.carousel-img {
+  height: 700px !important;
+  object-fit: cover;
+  object-position: 0% 25%;
+  width: 100%;
+}
+
+.slides {
+  height: 95vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides .arrow {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  opacity: 0.4;
+}
+
+.slides .arrow:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.slides .arrow.arrow-left {
+  padding-left: 10px;
+  left: 0;
+}
+
+.slides .arrow.arrow-right {
+  right: 10px;
+  padding-right: 10px;
+}
+
+.slides .slides-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  display: flex;
+  flex-wrap: nowrap;
+  transform: translateX(100%);
+  z-index: -1;
+}
+
+.slides .slides-container.locked {
+  transition: 0.5s ease-in-out;
+  transform: none;
+}
+
+.slides .slides-container .slide {
+  position: relative;
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  order: 2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slides-container.reversal {
+  transform: translateX(-100%);
+}
+
+.slides .slides-container .slide.reference {
+  order: 1 !important;
+}
+
+#slide-1 {
+  background-image: url('../images/slide.jpg');
+}
+
+#slide-2 {
+  background-image: url('../images/slide1.jpg');
+}
+
+#slide-3 {
+  background-image: url('../images/slide2.jpg');
+}
+
+.main2-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/slide1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  width: 100%;
+}
+
+.about {
+  background-color: rgba(199, 42, 42, 0.08);
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+  font-weight: bold;
+}
+
+.about .content {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.about .content .title {
+  font-size: 2em;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #c72a2a;
+  margin: 20px;
+  max-width: 550px;
+}
+
+.about .content .summary {
+  line-height: 1.7;
+  font-family: 'Forum';
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.hr {
+  border-top: 4px double #de9a9a;
+	text-align: center;
+  margin-top: 5px;
+  width: 470px;
+}
+
+.hr:after {
+	content: "\2665";
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #fff;
+	color: #f36464;
+	font-size: 20px;
+}
+
+.team {
+  justify-content: center;
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+  padding: 50px;
+  font-size: 2em;
+  color: #c72a2a;
+  font-weight: bold;
+}
+
+.team-paragraph {
+  justify-content: center;
+  text-align: center;
+  font-family: 'Forum';
+  font-size: 0.7em;
+  font-style: italic;
+  color: #333333;
+  font-weight: lighter;
+  margin: 10px;
+}
+
+.team-photos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.team-member {
+  flex: 0 0 25vw;
+  position: relative;
+  padding: 0 0 70px;
+  margin: 10px;
+}
+
+.team-photo-blurp {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.image-settings {
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-photo-blurp {
+  margin: 0 20px;
+  height: 100px;
+  color: white;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: arial;
+  font-size: 0.7em;
+}
+
+.team-photo-blurp:hover {
+  color: white;
+  background-color: #c72a2a;
+}
+
+.class-schedule {
+  font-size: 2em;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #c72a2a;
+  margin: 20px 0;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.schedules-container {
+  position: relative;
+}
+
+.schedules {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 25px;
+  justify-content: center;
+}
+
+.schedules-background {
+  background-size: cover;
+  background-image: url("../images/pilates.jpg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.schedules-overlay {
+  z-index: -1;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.schedule-boxes {
+  flex: 0 0 350px;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  border: 3px solid white;
+  color: white;
+}
+
+.schedule-boxes:hover {
+  background: rgba(255, 255, 255, 0.52);
+  color: black;
+}
+
+.hide-me {
+  display: block;
+}
+
+.show-me {
+  display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.schedule-boxes:hover .show-me {
+  display: flex;
+}
+
+.schedule-boxes:hover .hide-me {
+  display: none;
+}
+
+.timetable-column {
+  flex: 1 0 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.timetable-pricing {
+  flex: 1 0 100%;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 1.45em;
+}
+
+.timetable {
+  display: flex;
+  padding: 3px;
+  justify-content: space-between;
+  font-size: 1.25em;
+  flex: 0 0 30px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.schedule-boxes:nth-child(3n+2) {
+  border-left: none;
+  border-right: none;
+}
+
+.schedule-boxes:nth-child(n+4) {
+  border-top: none;
+}
+
+.gallery-section {
+  justify-content: center;
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+  padding: 50px;
+  font-size: 2em;
+  color: #c72a2a;
+  font-weight: bold;
+}
+
+.gallery-carousel {
+  margin: 30px 0;
+}
+
+#gallery-preview, #gallery-nav {
+  width: 900px;
+  max-width: 90%;
+  margin: 0 auto;
+  max-height: 600px;
+}
+
+.preview-settings {
+  max-width: 250px;
+  max-height: auto;
+  margin: 0 auto;
+}
+
+.nav-settings {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.footers-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  flex: 1;
+}
+
+.footer-logo {
+  height: auto;
+  width: auto;
+  background-color: #d4004c;
+  flex: 1 0 50%;
+  background-image: url("../images/bannerfooter.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-element {
+  display: flex;
+  flex: 1 0 50%;
+  background-color: #d4004c;
+  padding: 20px 5px;
+  flex-wrap: wrap;
+}
+
+.footer-settings {
+  width: 580px;
+  height: auto;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.fa-map-marker, .fa-phone, .fa-envelope, .fa-facebook-square {
+  font-size: 1.5em;
+  color: white;
+}
+
+.element-content {
+  display: flex;
+  /*flex-direction: column;*/
+}
+
+.element-child-one {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.element-child-two {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.icons {
+  height: 55px;
+  margin: 0 15px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.writeup {
+  padding: 15px 0;
+  font-size: 1em;
+  color: white;
+  opacity: 0.8;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.icons-sizedown {
+  height: 25px;
+}
+
+.icons-writeup-sizedown {
+  height: 25px;
+}
+
+.footer-links {
+  color: white;
+}
+
+.copyright {
+  flex: 1 0 100%;
+  background-color: rgba(199, 42, 42, 0.08);
+  color: black;
+  font-size: 0.8em;
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 7px;
+}
+
+.list-styling {
+  display: inline-block;
+  padding: 15px 10px;
+}
+
+.footer-button {
+  color: white;
+  opacity: 0.9;
+}
+
+.list-styling-space {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+nav.navbar {
+  display: none;
+}
+
+.navbar-brand {
+  width: 125px;
+}
+
+/*@media all and (max-width : 950px) {
+  .main-title {
+    font-size: 4em;
+  }
+}*/
+
+@media all and (max-width : 550px) {
+  .about .content .summary {
+    font-size: 1em;
+  }
+
+  .team-paragraph {
+    font-size: 0.5em;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .icon-bar {
+    background-color: black;
+  }
+
+  .menu-hero {
+    display: none;
+  }
+
+  .menu-logo {
+    height: auto;
+  }
+
+  nav.navbar {
+    display: block;
+  }
+
+  .navbar-collapse {
+    z-index: 1;
+    position: fixed;
+    top: 70px;
+    width: 100vw;
+    background-color: white;
+  }
+
+  .schedules {
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+  .team {
+    padding: 15px;
+  }
+
+  .team-photos {
+    flex: 1;
+    height: 300px;
+    overflow-y: scroll;
+  }
+}
