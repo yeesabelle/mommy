@@ -294,6 +294,7 @@ h1, h2, h3, h4, h5, h6{
   align-items: center;
   justify-content: center;
   margin: 20px;
+ale();
 }
 
 .team-member {
@@ -301,6 +302,7 @@ h1, h2, h3, h4, h5, h6{
   position: relative;
   padding: 0 0 70px;
   margin: 10px;
+  filter: grayscale(100%);
 }
 
 .team-photo-blurp {
@@ -323,29 +325,68 @@ h1, h2, h3, h4, h5, h6{
   height: 100px;
   color: white;
   font-style: italic;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(199, 42, 42, 0.78);
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-family: arial;
+  font-family: 'Didact Gothic', sans-serif;
   font-size: 0.7em;
 }
 
-.team-photo-blurp:hover {
-  color: white;
-  background-color: #c72a2a;
+.blurp-hide {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.5em;
+  display: block;
+}
+
+.blurp-show{
+  display: none;
+  font-family: Garamond;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 0.9em;
+  padding: 20px;
+}
+
+.team-member:hover .blurp-hide{
+  display: none;
+}
+
+.team-member:hover .blurp-show{
+  display: flex;
+}
+
+.team-member:hover .team-photo-blurp {
+  box-shadow: 0px 2px 10px #888888;
+  transition: 0.5s;
+}
+
+.team-member:hover {
+  filter: none;
+  transition: 0.5s;
 }
 
 .class-schedule {
   font-size: 2em;
   font-family: 'Didact Gothic', sans-serif;
   color: #c72a2a;
-  margin: 20px 0;
+  margin: 10px 0;
   font-weight: bold;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.schedule-paragraph {
+  justify-content: center;
+  text-align: center;
+  font-family: 'Forum';
+  font-size: 1.4em;
+  font-style: italic;
+  color: #333333;
+  font-weight: normal;
+  margin: 0 0 30px 0;
 }
 
 .schedules-container {
@@ -385,17 +426,23 @@ h1, h2, h3, h4, h5, h6{
   align-items: center;
   justify-content: center;
   height: 300px;
-  border: 3px solid white;
+  background-color: rgba(0, 0, 0, 0.68);
+  /*border: 3px solid white;*/
+  margin: 5px;
+  transition: 0.2s;
+  /*border: 3px solid white;*/
   color: white;
 }
 
 .schedule-boxes:hover {
-  background: rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.5);
   color: black;
 }
 
 .hide-me {
   display: block;
+  /*text-shadow: 0 0 1px black;*/
+  font-size: 1.5em;
 }
 
 .show-me {
@@ -421,6 +468,10 @@ h1, h2, h3, h4, h5, h6{
   flex-flow: column;
   align-items: center;
   margin-top: 25px;
+}
+
+.test {
+  padding: 0px;
 }
 
 .timetable-pricing {
@@ -462,16 +513,23 @@ h1, h2, h3, h4, h5, h6{
   margin: 30px 0;
 }
 
-#gallery-preview, #gallery-nav {
+#gallery-preview {
   width: 900px;
   max-width: 90%;
   margin: 0 auto;
-  max-height: 600px;
+  height: 500px;
+}
+
+#gallery-nav {
+width: 900px;
+max-width: 90%;
+margin: 0 auto;
+max-height: 600px;
 }
 
 .preview-settings {
-  max-width: 250px;
-  max-height: auto;
+  max-width: 1250px;
+  height: 500px;
   margin: 0 auto;
 }
 
@@ -611,11 +669,19 @@ nav.navbar {
   width: 125px;
 }
 
+.slick-list.draggable {
+  height: 100%;
+}
+
 /*@media all and (max-width : 950px) {
   .main-title {
     font-size: 4em;
   }
 }*/
+
+@media all and (max-width: 1100px) {
+
+}
 
 @media all and (max-width : 550px) {
   .about .content .summary {
