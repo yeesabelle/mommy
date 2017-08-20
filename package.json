@@ -1,0 +1,14 @@
+{
+  "name": "mommy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yeesabelle/mommy.git",
+  "author": "Lim Jun Xian <eldrethlim@gmail.com>",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
