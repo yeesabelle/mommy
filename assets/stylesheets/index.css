@@ -294,7 +294,6 @@ h1, h2, h3, h4, h5, h6{
   align-items: center;
   justify-content: center;
   margin: 20px;
-ale();
 }
 
 .team-member {
@@ -303,13 +302,6 @@ ale();
   padding: 0 0 70px;
   margin: 10px;
   filter: grayscale(100%);
-}
-
-.team-photo-blurp {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .image-settings {
@@ -322,7 +314,7 @@ ale();
 
 .team-photo-blurp {
   margin: 0 20px;
-  height: 100px;
+  height: 120px;
   color: white;
   font-style: italic;
   background-color: rgba(199, 42, 42, 0.78);
@@ -332,7 +324,12 @@ ale();
   justify-content: center;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 0.7em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
+
 
 .blurp-hide {
   font-family: 'Didact Gothic', sans-serif;
@@ -346,7 +343,8 @@ ale();
   font-style: normal;
   font-weight: lighter;
   font-size: 0.9em;
-  padding: 20px;
+  padding: 20px 5px;
+
 }
 
 .team-member:hover .blurp-hide{
@@ -396,6 +394,7 @@ ale();
 .schedules {
   display: flex;
   flex-flow: row wrap;
+  /*flex-wrap: nowrap;*/
   padding: 25px;
   justify-content: center;
 }
@@ -421,11 +420,13 @@ ale();
 .schedule-boxes {
   flex: 0 0 350px;
   display: flex;
-  flex-flow: row wrap;
+  /*flex-flow: row wrap;*/
+  flex-wrap: nowrap;
   text-align: center;
   align-items: center;
   justify-content: center;
   height: 300px;
+  max-width: 90%;
   background-color: rgba(0, 0, 0, 0.68);
   /*border: 3px solid white;*/
   margin: 5px;
@@ -726,6 +727,7 @@ nav.navbar {
   .team {
     padding: 15px;
   }
+
 
   .team-photos {
     flex: 1;
