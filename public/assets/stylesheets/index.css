@@ -393,10 +393,10 @@ h1, h2, h3, h4, h5, h6{
 
 .schedules {
   display: flex;
-  flex-flow: row wrap;
+  /*flex-flow: row wrap;*/
   /*flex-wrap: nowrap;*/
   padding: 25px;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 .schedules-background {
@@ -720,8 +720,8 @@ nav.navbar {
   }
 
   .schedules {
-    height: 300px;
-    overflow-y: scroll;
+    height: 400px;
+    overflow-x: scroll;
   }
 
   .team {
@@ -731,7 +731,7 @@ nav.navbar {
 
   .team-photos {
     flex: 1;
-    height: 300px;
-    overflow-y: scroll;
+    height: auto;
+    /*overflow-y: scroll;*/
   }
 }
