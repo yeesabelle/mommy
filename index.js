@@ -1,14 +1,10 @@
 var express = require('express'),
     app = express(),
-    path = require('path')
+    path = require('path'),
+    env = process.env.NODE_ENV
 
 
 app.use(express.static(path.join(__dirname, './public')))
-
-// Routes
-app.get('*', (req,res) => {
-  res.sendFile(path.join(__dirname, './public/index.html'))
-})
 
 if (env == 'production') {
   app.use(function(req, res, next) {
@@ -18,5 +14,10 @@ if (env == 'production') {
     next();
   });
 }
+
+// Routes
+app.get('*', (req,res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'))
+})
 
 var server = app.listen(process.env.PORT || 3000)
