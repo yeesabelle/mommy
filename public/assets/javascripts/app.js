@@ -12,7 +12,11 @@ function timetableDropdown () {
     })
   }
 
-  var scroll = new SmoothScroll('a[href*="#"]');
+  new SmoothScroll('a[href*="#"]');
+  
+  $("a[data-scroll]").on('click', function() {
+    $('button.navbar-toggle').click();
+  });
 }
 
 window.addEventListener('load', timetableDropdown);
