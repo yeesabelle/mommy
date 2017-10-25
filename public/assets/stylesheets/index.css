@@ -1,12 +1,12 @@
-@charset 'UTF-8';
+/*@charset 'UTF-8';
 
 /* Bootstrap overrides */
-h1, h2, h3, h4, h5, h6{
+/*h1, h2, h3, h4, h5, h6{
   margin-top: 0;
   margin-bottom: 0;
-}
+}*/
 
-/* Main CSS */
+ /*Main CSS */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 .snip1226 {
@@ -64,11 +64,6 @@ h1, h2, h3, h4, h5, h6{
   transform: translateY(100%);
 }
 
-/* Demo purposes only */
-/*body {
-  background-color: #212121;
-  padding: 50px 0;
-}*/
 
 .menu-hero {
   display: flex;
@@ -98,24 +93,25 @@ h1, h2, h3, h4, h5, h6{
   align-items: center;
 }
 
-.main-button {
-  justify-content: center;
-  font-size: 1.7em;
-  height: 120px;
-  width: 120px;
-  color: #b9003e;
-  background-color: inherit;
-  font-family: 'Didact Gothic';
-  align-items: center;
-  border: none;
+
+.hr {
+  border-top: 4px double #de9a9a;
+	text-align: center;
+  margin-top: 5px;
+  width: 470px;
 }
 
-.main-button:hover {
-  border-color: black;
-  background: rgba(255, 175, 171, 0.8);
-  /*border-radius: 50%;*/
-  color: black;
+.hr:after {
+	content: "\2665";
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #fff;
+	color: #f36464;
+	font-size: 20px;
 }
+
 
 #carousel-container {
   padding: 0;
@@ -208,40 +204,24 @@ h1, h2, h3, h4, h5, h6{
   background-image: url('../images/slide2.jpg');
 }
 
-.main2-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../images/slide1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 95vh;
-  width: 100%;
-}
+
+/* Titles and Descriptions */
 
 .about {
   background-color: rgba(199, 42, 42, 0.08);
   justify-content: center;
   text-align: center;
-  padding: 50px 0;
-  font-weight: bold;
+  padding: 10px;
 }
 
-.about .content {
-  max-width: 550px;
-  margin: 0 auto;
-}
-
-.about .content .title {
+.about-title {
   font-size: 2em;
   font-family: 'Didact Gothic', sans-serif;
   color: #c72a2a;
   margin: 20px;
-  max-width: 550px;
 }
 
-.about .content .summary {
+.about-desc {
   line-height: 1.7;
   font-family: 'Forum';
   font-style: italic;
@@ -249,22 +229,59 @@ h1, h2, h3, h4, h5, h6{
   font-weight: lighter;
 }
 
-.hr {
-  border-top: 4px double #de9a9a;
-	text-align: center;
-  margin-top: 5px;
-  width: 470px;
+.crews {
+  justify-content: center;
+  text-align: center;
+  padding: 60px 0;
 }
 
-.hr:after {
-	content: "\2665";
-	display: inline-block;
-	position: relative;
-	top: -15px;
-	padding: 0 10px;
-	background: #fff;
-	color: #f36464;
-	font-size: 20px;
+.crews-title {
+  font-size: 2em;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #c72a2a;
+  margin: 20px;
+}
+
+.crews-desc {
+  line-height: 1.7;
+  font-family: 'Forum';
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.schedule {
+  /*background-color: rgba(199, 42, 42, 0.08);*/
+  justify-content: center;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.schedule-title {
+  font-size: 2em;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #c72a2a;
+  margin: 20px;
+}
+
+.schedule-desc {
+  line-height: 1.7;
+  font-family: 'Forum';
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+
+
+/* Contents */
+
+.team-photos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }
 
 .team {
@@ -365,38 +382,16 @@ h1, h2, h3, h4, h5, h6{
   transition: 0.5s;
 }
 
-.class-schedule {
-  font-size: 2em;
-  font-family: 'Didact Gothic', sans-serif;
-  color: #c72a2a;
-  margin: 10px 0;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.schedule-paragraph {
-  justify-content: center;
-  text-align: center;
-  font-family: 'Forum';
-  font-size: 1.4em;
-  font-style: italic;
-  color: #333333;
-  font-weight: normal;
-  margin: 0 0 30px 0;
-}
-
 .schedules-container {
   position: relative;
 }
 
 .schedules {
   display: flex;
-  /*flex-flow: row wrap;*/
+  flex-flow: row wrap;
   /*flex-wrap: nowrap;*/
   padding: 25px;
-  /*justify-content: center;*/
+  justify-content: center;
 }
 
 .schedules-background {
@@ -471,10 +466,6 @@ h1, h2, h3, h4, h5, h6{
   margin-top: 25px;
 }
 
-.test {
-  padding: 0px;
-}
-
 .timetable-pricing {
   flex: 1 0 100%;
   font-family: 'Didact Gothic', sans-serif;
@@ -491,14 +482,6 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Didact Gothic', sans-serif;
 }
 
-.schedule-boxes:nth-child(3n+2) {
-  border-left: none;
-  border-right: none;
-}
-
-.schedule-boxes:nth-child(n+4) {
-  border-top: none;
-}
 
 .gallery-section {
   justify-content: center;
@@ -532,6 +515,9 @@ max-height: 600px;
   max-width: 1250px;
   height: 500px;
   margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-settings {
@@ -572,12 +558,12 @@ body { font-family: sans-serif; }
   flex-wrap: wrap;
 }
 
-.footer-settings {
-  width: 580px;
+/*.footer-settings {
+  width: 600px;
   height: auto;
   justify-content: center;
   object-fit: cover;
-}
+}*/
 
 .fa-map-marker, .fa-phone, .fa-envelope, .fa-facebook-square {
   font-size: 1.5em;
@@ -641,7 +627,7 @@ body { font-family: sans-serif; }
   background-color: rgba(199, 42, 42, 0.08);
   color: black;
   font-size: 0.8em;
-  height: 30px;
+  height: 40px;
   text-align: center;
   justify-content: center;
   padding-top: 7px;
@@ -680,13 +666,61 @@ nav.navbar {
   }
 }*/
 
-@media all and (max-width: 1100px) {
+.hello-world {
+  display: none;
+  height: auto;
+}
 
+.hidden-main {
+  height: 100%;
+  background-image: url('../images/bannerfooter.jpg');
+  background-size: contain;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.black-overlay {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 1;
+}
+
+
+.hidden-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+@media all and (max-width: 920px) {
+  .hello-world {
+    display: block;
+  }
+
+  #carousel-container {
+    display: none;
+  }
 }
 
 @media all and (max-width : 550px) {
   .about .content .summary {
     font-size: 1em;
+    padding: 0 30px;
+  }
+
+  .schedule-paragraph {
+    font-size: 1em;
+    padding: 0 30px;
   }
 
   .team-paragraph {
@@ -722,6 +756,8 @@ nav.navbar {
   .schedules {
     height: 400px;
     overflow-x: scroll;
+    flex-flow: nowrap;
+    justify-content: flex-start;
   }
 
   .team {
