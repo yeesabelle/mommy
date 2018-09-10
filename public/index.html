@@ -14,8 +14,9 @@
     <script src="assets/javascripts/app.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic:100,200,300,400,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum:100,200,300,400,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,250,300,400,600,700,800,900">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/slick.css"/>
     <link rel="stylesheet" href="assets/stylesheets/slick-theme.css">
     <link rel="stylesheet" href="assets/stylesheets/index.css">
@@ -49,61 +50,63 @@
       </div>
     </nav>
 
-    <div class="menu-hero">
-      <ul class="snip1226">
-        <li class="current"><a data-scroll href="#home" data-hover="Home">Home</a></li>
-        <li><a data-scroll href="#about" data-hover="About Us">About Us</a></li>
-        <li><a data-scroll href="#crews" data-hover="A-Crews">A-Crews</a></li>
-        <img class="menu-logo" src="./assets/images/logo-final.png">
-        <li><a data-scroll href="#schedu3le" data-hover="Classes">Classes</a></li>
-        <li><a data-scroll href="#events" data-hover="Gallery">Gallery</a></li>
-        <li><a data-scroll href="#contact" data-hover="Contact">Contact</a></li>
-      </ul>
-    </div>
+    <div class="banner">
 
+      <div class="menu-hero">
+        <ul class="snip1226">
+          <li class="current"><a data-scroll href="#home" data-hover="Home">Home</a></li>
+          <li><a data-scroll href="#about" data-hover="About Us">About Us</a></li>
+          <li><a data-scroll href="#crews" data-hover="A-Crews">A-Crews</a></li>
+          <img class="menu-logo" src="./assets/images/logo-final.png">
+          <li><a data-scroll href="#schedu3le" data-hover="Classes">Classes</a></li>
+          <li><a data-scroll href="#events" data-hover="Gallery">Gallery</a></li>
+          <li><a data-scroll href="#contact" data-hover="Contact">Contact</a></li>
+        </ul>
+      </div>
 
-    <div class="container-fluid" id="carousel-container">
-      <div class="carousel slide" id="myCarousel" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="./assets/images/slide.jpg" class="carousel-img" alt="1">
+      <div class="black-overlay">
+        <div class="welcome-message">
+          <div class="message-intro"> ADD DANCE TO YOUR LIFE
           </div>
+          <!-- <div class="banner-buttons">
+            <button type="button" class="facebook-button">
+              Visit Our Facebook
+            </button>
+            <button type="button" class="facebook-button">
+              Hi there
+            </button>
+          </div> -->
 
-          <div class="item">
-            <img src="./assets/images/slide.jpg" class="carousel-img" alt="2">
+          <div class="message-intro" style="font-weight:300; text-shadow:0px 0px 3px black"> Adults &#8226; Kids &#8226; Teenagers
           </div>
-
-          <div class="item">
-            <img src="./assets/images/slide.jpg" class="carousel-img" alt="3">
+          <div class="message-intro" style="font-weight:400; text-shadow:0px 0px 3px black"> JOIN NOW!
           </div>
         </div>
-
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
 
+
     <div class="about" id="about">
       <div class="about-title">
-        A-Dance Academy
+        <!-- A-Dance Academy -->
       </div>
       <p class="about-desc">
         Dance is an integral part of the live and recorded performing arts and cultural industries.
         It is often collaborative and provides creative and work opportunities for artists working
         in a range of other art forms including music, design, film, sculpture and theatre.
       </p>
+    </div>
+
+
+    <div class="studio-pics">
+      <div class="studio-pic1"></div>
+      <div class="studio-pic2"></div>
+    </div>
+
+    <div class="studio">
+      <div class="studio-desc">
+        Kota Kemuning, Selangor, Malaysia.
+      </div>
     </div>
 
     <div class="crews" id="crews">
@@ -215,220 +218,54 @@
 
     </div>
 
-    <div class="schedule" id="schedule">
-      <div class="schedule-title">
-        Schedule
-      </div>
-      <p class="schedule-desc">
-        We give free trials for most classes. Contact us for more details!
-      </p>
-    </div>
-      <div class="schedules-container">
+    <div class="schedules-container">
       <div class="schedules-overlay">
       </div>
       <div class="schedules-background">
       </div>
+      <div class="schedule" id="schedule">
+        <div class="schedule-title">
+          Schedule
+        </div>
+        <p class="schedule-desc">
+          We give free trials for most classes. Contact us for more details!
+        </p>
+      </div>
+
       <div class="schedules">
+
         <div class="schedule-boxes">
           <h4 class="hide-me">
-            Therapy Yoga
+            Line Dance - EZ Intermediate
           </h4>
           <div class="show-me">
+            <div class="timetable-pricing">
+              Line Dance - EZ Intermediate
+            </div>
             <div class="timetable-column">
               <div class="timetable">
-                Days
-              </div>
-              <div class="timetable">
-                Tuesday
-              </div>
-              <div class="timetable">
-
+                Monday
               </div>
               <div class="timetable">
                 Wednesday
               </div>
               <div class="timetable">
-                Thursday
-              </div>
-              <div class="timetable">
-                Saturday
+
               </div>
             </div>
             <div class="timetable-column">
               <div class="timetable">
-                Time
+                8.30pm - 9.30pm
               </div>
               <div class="timetable">
-                8.30 - 9.30 AM
+                9.30am - 10.30am
               </div>
               <div class="timetable">
-                7.30 - 8.30 AM
-              </div>
-              <div class="timetable">
-                6.30 - 7.30 PM
-              </div>
-              <div class="timetable">
-                9.30 - 10.30 AM
-              </div>
-              <div class="timetable">
-                1.45 - 2.45 PM
+                8.30pm - 9.30pm
               </div>
             </div>
             <div class="timetable-pricing">
-              RM 100 &emsp;|&emsp; 1 hour
-            </div>
-          </div>
-        </div>
-
-        <div class="schedule-boxes">
-          <h4 class="hide-me">
-            Zumba
-          </h4>
-          <div class="show-me">
-            <div class="timetable-column">
-              <div class="timetable">
-                Days
-              </div>
-              <div class="timetable">
-                Tuesday
-              </div>
-              <div class="timetable">
-
-              </div>
-              <div class="timetable">
-                Wednesday
-              </div>
-              <div class="timetable">
-                Thursday
-              </div>
-              <div class="timetable">
-                Saturday
-              </div>
-            </div>
-            <div class="timetable-column">
-              <div class="timetable">
-                Time
-              </div>
-              <div class="timetable">
-                8.30 - 9.30 AM
-              </div>
-              <div class="timetable">
-                7.30 - 8.30 AM
-              </div>
-              <div class="timetable">
-                6.30 - 7.30 PM
-              </div>
-              <div class="timetable">
-                9.30 - 10.30 AM
-              </div>
-              <div class="timetable">
-                1.45 - 2.45 PM
-              </div>
-            </div>
-            <div class="timetable-pricing">
-              RM 100 &emsp;|&emsp; 1 hour
-            </div>
-          </div>
-        </div>
-
-        <div class="schedule-boxes">
-          <h4 class="hide-me">
-             Pilates
-          </h4>
-          <div class="show-me">
-            <div class="timetable-column">
-              <div class="timetable">
-                Days
-              </div>
-              <div class="timetable">
-                Tuesday
-              </div>
-              <div class="timetable">
-
-              </div>
-              <div class="timetable">
-                Wednesday
-              </div>
-              <div class="timetable">
-                Thursday
-              </div>
-              <div class="timetable">
-                Saturday
-              </div>
-            </div>
-            <div class="timetable-column">
-              <div class="timetable">
-                Time
-              </div>
-              <div class="timetable">
-                8.30 - 9.30 AM
-              </div>
-              <div class="timetable">
-                7.30 - 8.30 AM
-              </div>
-              <div class="timetable">
-                6.30 - 7.30 PM
-              </div>
-              <div class="timetable">
-                9.30 - 10.30 AM
-              </div>
-              <div class="timetable">
-                1.45 - 2.45 PM
-              </div>
-            </div>
-            <div class="timetable-pricing">
-              RM 100 &emsp;|&emsp; 1 hour
-            </div>
-          </div>
-        </div>
-
-        <div class="schedule-boxes">
-          <h4 class="hide-me">
-            Street Jazz
-          </h4>
-          <div class="show-me">
-            <div class="timetable-column">
-              <div class="timetable">
-                Days
-              </div>
-              <div class="timetable">
-                Tuesday
-              </div>
-              <div class="timetable">
-
-              </div>
-              <div class="timetable">
-                Wednesday
-              </div>
-              <div class="timetable">
-                Thursday
-              </div>
-              <div class="timetable">
-                Saturday
-              </div>
-            </div>
-            <div class="timetable-column">
-              <div class="timetable">
-                Time
-              </div>
-              <div class="timetable">
-                8.30 - 9.30 AM
-              </div>
-              <div class="timetable">
-                7.30 - 8.30 AM
-              </div>
-              <div class="timetable">
-                6.30 - 7.30 PM
-              </div>
-              <div class="timetable">
-                9.30 - 10.30 AM
-              </div>
-              <div class="timetable">
-                1.45 - 2.45 PM
-              </div>
-            </div>
-            <div class="timetable-pricing">
-              RM 100 &emsp;|&emsp; 1 hour
+              RM 60 &emsp;|&emsp; 1 hour
             </div>
           </div>
         </div>
@@ -438,10 +275,67 @@
             Line Dance - Intermediate
           </h4>
           <div class="show-me">
+            <div class="timetable-pricing">
+              Line Dance - Intermediate
+            </div>
             <div class="timetable-column">
               <div class="timetable">
-                Days
+                Thursday
               </div>
+              <div class="timetable">
+                Saturday
+              </div>
+            </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                8.30pm - 9.30pm
+              </div>
+              <div class="timetable">
+                9.00am - 10.am
+              </div>
+            </div>
+            <div class="timetable-pricing">
+              RM 65 &emsp;|&emsp; 1 hour
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-boxes">
+          <h4 class="hide-me">
+             Line Dance - Advance
+          </h4>
+          <div class="show-me">
+            <div class="timetable-pricing">
+              Line Dane - Advance
+            </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                Saturday
+              </div>
+            </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                10.30am - 11.30am
+              </div>
+            </div>
+            <div class="timetable-pricing">
+              RM 80 &emsp;|&emsp; 1 hour
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-boxes">
+          <h4 class="hide-me">
+            Therapy Yoga
+          </h4>
+          <div class="show-me">
+            <div class="timetable-pricing">
+              Therapy Yoga
+            </div>
+            <div class="timetable-column">
+              <!-- <div class="timetable">
+                Days
+              </div> -->
               <div class="timetable">
                 Tuesday
               </div>
@@ -454,14 +348,14 @@
               <div class="timetable">
                 Thursday
               </div>
-              <div class="timetable">
+              <!-- <div class="timetable">
                 Saturday
-              </div>
+              </div> -->
             </div>
             <div class="timetable-column">
-              <div class="timetable">
+              <!-- <div class="timetable">
                 Time
-              </div>
+              </div> -->
               <div class="timetable">
                 8.30 - 9.30 AM
               </div>
@@ -472,10 +366,103 @@
                 6.30 - 7.30 PM
               </div>
               <div class="timetable">
-                9.30 - 10.30 AM
+              8.30 - 9.30 AM
               </div>
               <div class="timetable">
-                1.45 - 2.45 PM
+                9.30 - 10.30 AM
+              </div>
+            </div>
+            <div class="timetable-pricing">
+              RM 90 &emsp;|&emsp; 1 hour
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-boxes">
+          <h4 class="hide-me">
+            Zumba
+          </h4>
+          <div class="show-me">
+            <div class="timetable-pricing">
+              Zumba
+            </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                Tuesday
+              </div>
+              <div class="timetable">
+                Wednesday
+              </div>
+              <div class="timetable">
+                Thursday
+              </div>
+              <div class="timetable">
+                Friday
+              </div>
+            </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                8.30 - 9.30 PM
+              </div>
+              <div class="timetable">
+                8.30 - 9.30 AM
+              </div>
+              <div class="timetable">
+                7.30 - 8.30 PM
+              </div>
+              <div class="timetable">
+                9.30 - 10.30 AM
+              </div>
+
+            </div>
+            <div class="timetable-pricing">
+              RM 80 &emsp;|&emsp; 1 hour
+            </div>
+          </div>
+        </div>
+
+
+        <div class="schedule-boxes">
+          <h4 class="hide-me">
+            Street Jazz (Teen)
+          </h4>
+          <div class="show-me">
+            <div class="timetable-pricing">
+              Street Jazz (Teen)
+            </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                Monday
+              </div>
+            </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                7.30pm - 8.30pm
+              </div>
+            </div>
+            <div class="timetable-pricing">
+              RM 100 &emsp;|&emsp; 1 hour
+            </div>
+          </div>
+        </div>
+
+
+        <div class="schedule-boxes">
+          <h4 class="hide-me">
+            Belly Dance
+          </h4>
+          <div class="show-me">
+            <div class="timetable-pricing">
+              Belly Dance
+            </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                Wednesday
+              </div>
+            </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                7.30pm - 8.30pm
               </div>
             </div>
             <div class="timetable-pricing">
@@ -486,47 +473,44 @@
 
         <div class="schedule-boxes">
           <h4 class="hide-me">
-            Line Dance - Beginner
+            Body Rhythmic
           </h4>
           <div class="show-me">
+            <div class="timetable-pricing">
+              Body Rhymthmic
+            </div>
             <div class="timetable-column">
               <div class="timetable">
-                Days
-              </div>
-              <div class="timetable">
-                Tuesday
-              </div>
-              <div class="timetable">
-
-              </div>
-              <div class="timetable">
-                Wednesday
-              </div>
-              <div class="timetable">
-                Thursday
-              </div>
-              <div class="timetable">
-                Saturday
+                Monday
               </div>
             </div>
             <div class="timetable-column">
               <div class="timetable">
-                Time
+                9am - 10.30am
               </div>
+            </div>
+            <div class="timetable-pricing">
+              RM 100 &emsp;|&emsp; 1.5 hours
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-boxes">
+          <h4 class="hide-me">
+            K-POP / Korean Choreography
+          </h4>
+          <div class="show-me">
+            <div class="timetable-pricing">
+              K-POP / Korean Choreography
+            </div>
+            <div class="timetable-column">
               <div class="timetable">
-                8.30 - 9.30 AM
+                Friday
               </div>
+            </div>
+            <div class="timetable-column">
               <div class="timetable">
-                7.30 - 8.30 AM
-              </div>
-              <div class="timetable">
-                6.30 - 7.30 PM
-              </div>
-              <div class="timetable">
-                9.30 - 10.30 AM
-              </div>
-              <div class="timetable">
-                1.45 - 2.45 PM
+                7.30pm - 8.30pm
               </div>
             </div>
             <div class="timetable-pricing">
@@ -537,156 +521,68 @@
 
         <div class="schedule-boxes">
           <h4 class="hide-me">
-            Street Jazz
+             COMBO CLASSES!
           </h4>
-          <div class="show-me">
-            <div class="timetable-column">
-              <div class="timetable">
-                Days
-              </div>
-              <div class="timetable">
-                Tuesday
-              </div>
-              <div class="timetable">
-
-              </div>
-              <div class="timetable">
-                Wednesday
-              </div>
-              <div class="timetable">
-                Thursday
-              </div>
-              <div class="timetable">
-                Saturday
-              </div>
-            </div>
-            <div class="timetable-column">
-              <div class="timetable">
-                Time
-              </div>
-              <div class="timetable">
-                8.30 - 9.30 AM
-              </div>
-              <div class="timetable">
-                7.30 - 8.30 AM
-              </div>
-              <div class="timetable">
-                6.30 - 7.30 PM
-              </div>
-              <div class="timetable">
-                9.30 - 10.30 AM
-              </div>
-              <div class="timetable">
-                1.45 - 2.45 PM
-              </div>
-            </div>
+          <div class="show-me overflowed">
             <div class="timetable-pricing">
-              RM 100 &emsp;|&emsp; 1 hour
+              Duo-class (8 times / month)
             </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                Zumba x 2
+              </div>
+              <div class="timetable">
+                Yoga x 2
+              </div>
+              <div class="timetable">
+                Zumba + Yoga
+              </div>
+              <div class="timetable">
+                Zumba + Line Dance EZ Inter
+              </div>
+              <div class="timetable">
+                Zumba x Line Dance Inter
+              </div>
+              <div class="timetable">
+                Line Dance Inter + Advance
+              </div>
+              <div class="timetable">
+                Line Dance EZ Inter + Belly Dance
+              </div>
+              <div class="timetable">
+                Zumba UNLIMITED
+              </div>
+            </div>
+            <div class="timetable-column">
+              <div class="timetable">
+                RM 140
+              </div>
+              <div class="timetable">
+                RM 160
+              </div>
+              <div class="timetable">
+                RM 160
+              </div>
+              <div class="timetable">
+                RM 130
+              </div>
+              <div class="timetable">
+                RM 135
+              </div>
+              <div class="timetable">
+                RM 135
+              </div>
+              <div class="timetable">
+                RM 150
+              </div>
+              <div class="timetable">
+                RM 160 per month
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="schedule-boxes">
-          <h4 class="hide-me">
-            Street Jazz
-          </h4>
-          <div class="show-me">
-            <div class="timetable-column">
-              <div class="timetable">
-                Days
-              </div>
-              <div class="timetable">
-                Tuesday
-              </div>
-              <div class="timetable">
-
-              </div>
-              <div class="timetable">
-                Wednesday
-              </div>
-              <div class="timetable">
-                Thursday
-              </div>
-              <div class="timetable">
-                Saturday
-              </div>
-            </div>
-            <div class="timetable-column">
-              <div class="timetable">
-                Time
-              </div>
-              <div class="timetable">
-                8.30 - 9.30 AM
-              </div>
-              <div class="timetable">
-                7.30 - 8.30 AM
-              </div>
-              <div class="timetable">
-                6.30 - 7.30 PM
-              </div>
-              <div class="timetable">
-                9.30 - 10.30 AM
-              </div>
-              <div class="timetable">
-                1.45 - 2.45 PM
-              </div>
-            </div>
-            <div class="timetable-pricing">
-              RM 100 &emsp;|&emsp; 1 hour
-            </div>
-          </div>
-        </div>
-
-        <div class="schedule-boxes">
-          <h4 class="hide-me">
-            Street Jazz
-          </h4>
-          <div class="show-me">
-            <div class="timetable-column">
-              <div class="timetable">
-                Days
-              </div>
-              <div class="timetable">
-                Tuesday
-              </div>
-              <div class="timetable">
-
-              </div>
-              <div class="timetable">
-                Wednesday
-              </div>
-              <div class="timetable">
-                Thursday
-              </div>
-              <div class="timetable">
-                Saturday
-              </div>
-            </div>
-            <div class="timetable-column">
-              <div class="timetable">
-                Time
-              </div>
-              <div class="timetable">
-                8.30 - 9.30 AM
-              </div>
-              <div class="timetable">
-                7.30 - 8.30 AM
-              </div>
-              <div class="timetable">
-                6.30 - 7.30 PM
-              </div>
-              <div class="timetable">
-                9.30 - 10.30 AM
-              </div>
-              <div class="timetable">
-                1.45 - 2.45 PM
-              </div>
-            </div>
-            <div class="timetable-pricing">
-              RM 100 &emsp;|&emsp; 1 hour
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -744,7 +640,7 @@
               <i class="fa fa-phone" aria-hidden="true"></i>
             </div>
             <div class="writeup">
-              <h7> +016-206-2356 </h7>
+              <a href="tel:60162062356">+016-206-2356</a>
             </div>
           </div>
 
@@ -767,34 +663,6 @@
               </a>
             </div>
           </div>
-        </div>
-
-        <div class="element-child-two">
-          <ul>
-            <li class="list-styling">
-              <a href="#" type="button" class="footer-button">Home</a>
-            </li>
-            <li class="list-styling-space">
-            </li>
-            <li class="list-styling">
-              <a href="#" type="button" class="footer-button">About</a>
-            </li>
-            <li class="list-styling-space">
-            </li>
-            <li class="list-styling">
-              <a href="#" type="button" class="footer-button">Team</a>
-            </li>
-            <li class="list-styling-space">
-            </li>
-            <li class="list-styling">
-              <a href="#" type="button" class="footer-button">Schedule</a>
-            </li>
-            <li class="list-styling-space">
-            </li>
-            <li class="list-styling">
-              <a href="#" type="button" class="footer-button">Gallery</a>
-            </li>
-          </ul>
         </div>
       </div>
 

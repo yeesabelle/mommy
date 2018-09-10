@@ -29,7 +29,7 @@
 }
 .snip1226 a {
   padding: 0.3em 0;
-  color: #b9003e;
+  color: white;
   justify-content: center;
   position: relative;
   display: inline-block;
@@ -64,26 +64,18 @@
   transform: translateY(100%);
 }
 
-
 .menu-hero {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  background-color: white;
   padding: 30px;
   width: 100%;
   flex: 1;
   justify-content: center;
   text-align: center;
   min-width: 5px;
-}
-
-.menu-bar {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  display: flex;
+  position: absolute;
+  z-index: 1;
 }
 
 .menu-logo {
@@ -91,6 +83,60 @@
   width: auto;
   justify-content: center;
   align-items: center;
+}
+
+.banner {
+  background-image: url('../images/bannerfinal.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 850px;
+  width: 100%;
+}
+
+.black-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-message {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3em;
+  color: white;
+  font-family: 'Lato';
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.message-intro {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.banner-buttons {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 0.3em;
+}
+
+.facebook-button{
+  border: 2px solid white;
+  background-color: inherit;
+  font-size: 1.5em;
+  margin: 60px 20px;
+  padding: 10px;
+}
+
+.facebook-button:hover{
+  background-color: #4267b3;
 }
 
 
@@ -112,109 +158,18 @@
 	font-size: 20px;
 }
 
-
-#carousel-container {
-  padding: 0;
-}
-
-.carousel-img {
-  height: 700px !important;
-  object-fit: cover;
-  object-position: 0% 25%;
-  width: 100%;
-}
-
-.slides {
-  height: 95vh;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.slides .arrow {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  color: white;
-  opacity: 0.4;
-}
-
-.slides .arrow:hover {
-  opacity: 1;
-  transition: 0.5s ease-in-out;
-}
-
-.slides .arrow.arrow-left {
-  padding-left: 10px;
-  left: 0;
-}
-
-.slides .arrow.arrow-right {
-  right: 10px;
-  padding-right: 10px;
-}
-
-.slides .slides-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  display: flex;
-  flex-wrap: nowrap;
-  transform: translateX(100%);
-  z-index: -1;
-}
-
-.slides .slides-container.locked {
-  transition: 0.5s ease-in-out;
-  transform: none;
-}
-
-.slides .slides-container .slide {
-  position: relative;
-  flex: 1 0 100%;
-  width: 100%;
-  height: 100%;
-  order: 2;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.slides-container.reversal {
-  transform: translateX(-100%);
-}
-
-.slides .slides-container .slide.reference {
-  order: 1 !important;
-}
-
-#slide-1 {
-  background-image: url('../images/slide.jpg');
-}
-
-#slide-2 {
-  background-image: url('../images/slide1.jpg');
-}
-
-#slide-3 {
-  background-image: url('../images/slide2.jpg');
-}
-
-
-/* Titles and Descriptions */
-
 .about {
-  background-color: rgba(199, 42, 42, 0.08);
+  /*background-color: rgba(199, 42, 42, 0.08);*/
   justify-content: center;
   text-align: center;
-  padding: 10px;
 }
 
 .about-title {
+  background-image: url('../images/logo-final.png');
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   font-size: 2em;
   font-family: 'Didact Gothic', sans-serif;
   color: #c72a2a;
@@ -227,9 +182,65 @@
   font-style: italic;
   font-size: 1.5em;
   font-weight: lighter;
+  margin: 40px 200px;
+}
+
+.studio-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  padding: 0 40px;
+}
+
+.studio-pic1 {
+  background-image: url('../images/studio.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-position: 50%;
+  margin: 20px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  min-width: 380px;
+}
+
+.studio-pic2 {
+  background-image: url('../images/studio2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-position: 50%;
+  margin: 20px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  min-width: 380px;
+}
+@media all and (max-width: 600px) {
+  .studio-pic1, .studio-pic2 {
+    min-height: 300px;
+    height: auto;
+  }
+}
+
+
+.studio{
+  justify-content: center;
+  text-align: center;
+}
+
+.studio-desc {
+  text-align: center;
+  margin: 0px 0px 100px 0px;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .crews {
+  background-color: rgba(199, 42, 42, 0.08);
   justify-content: center;
   text-align: center;
   padding: 60px 0;
@@ -254,14 +265,18 @@
   /*background-color: rgba(199, 42, 42, 0.08);*/
   justify-content: center;
   text-align: center;
-  padding: 60px 0;
+  padding: 60px 10px;
 }
 
 .schedule-title {
   font-size: 2em;
   font-family: 'Didact Gothic', sans-serif;
-  color: #c72a2a;
+  color: white;
   margin: 20px;
+}
+
+.schedule {
+  position: relative;
 }
 
 .schedule-desc {
@@ -270,6 +285,7 @@
   font-style: italic;
   font-size: 1.5em;
   font-weight: lighter;
+  color: white;
 }
 
 
@@ -340,7 +356,7 @@
   text-align: center;
   justify-content: center;
   font-family: 'Didact Gothic', sans-serif;
-  font-size: 0.7em;
+  font-size: 1.2em;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -350,7 +366,7 @@
 
 .blurp-hide {
   font-family: 'Didact Gothic', sans-serif;
-  font-size: 1.5em;
+  /*font-size: 1.5em;*/
   display: block;
 }
 
@@ -359,7 +375,7 @@
   font-family: Garamond;
   font-style: normal;
   font-weight: lighter;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 20px 5px;
 
 }
@@ -390,8 +406,8 @@
   display: flex;
   flex-flow: row wrap;
   /*flex-wrap: nowrap;*/
-  padding: 25px;
   justify-content: center;
+  margin: 0 7px;
 }
 
 .schedules-background {
@@ -448,6 +464,11 @@
   justify-content: space-around;
   margin: 20px;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.show-me.overflowed {
+  overflow-y: scroll;
 }
 
 .schedule-boxes:hover .show-me {
@@ -474,9 +495,7 @@
 }
 
 .timetable {
-  display: flex;
   padding: 3px;
-  justify-content: space-between;
   font-size: 1.25em;
   flex: 0 0 30px;
   font-family: 'Didact Gothic', sans-serif;
@@ -506,7 +525,7 @@
 
 #gallery-nav {
 width: 900px;
-max-width: 90%;
+max-width: 80%;
 margin: 0 auto;
 max-height: 600px;
 }
@@ -528,9 +547,9 @@ max-height: 600px;
   justify-content: center;
 }
 
-* { box-sizing: border-box; }
+/** { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+body { font-family: sans-serif; }*/
 
 .footers-container {
   display: flex;
@@ -543,19 +562,20 @@ body { font-family: sans-serif; }
   height: auto;
   width: auto;
   background-color: #d4004c;
-  flex: 1 0 50%;
+  flex: 1 0 525px;
   background-image: url("../images/bannerfooter.jpg");
-  background-position: center;
+  background-position: 50% 0;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .footer-element {
   display: flex;
-  flex: 1 0 50%;
+  flex: 1;
   background-color: #d4004c;
-  padding: 20px 5px;
   flex-wrap: wrap;
+  padding: 10px;
+  height: 330px;
 }
 
 /*.footer-settings {
@@ -577,14 +597,14 @@ body { font-family: sans-serif; }
 
 .element-child-one {
   display: flex;
-  flex: 1;
+  flex: 2;
   justify-content: center;
   color: white;
   flex-direction: column;
 }
 
 .element-child-two {
-  flex: 1;
+  flex: 1 0 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -633,9 +653,13 @@ body { font-family: sans-serif; }
   padding-top: 7px;
 }
 
+.list-container {
+  padding: 0;
+}
+
 .list-styling {
   display: inline-block;
-  padding: 15px 10px;
+  padding: 10px 7px;
 }
 
 .footer-button {
@@ -681,16 +705,6 @@ nav.navbar {
   background-color: black;
 }
 
-.black-overlay {
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity: 1;
-}
-
-
 .hidden-button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -726,6 +740,11 @@ nav.navbar {
   .team-paragraph {
     font-size: 0.5em;
   }
+
+  .about-desc {
+    margin: 40px;
+  }
+
 }
 
 @media all and (max-width: 767px) {
