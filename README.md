@@ -19,4 +19,7 @@
 - When you are done and happy with the changes, type `git status` in your terminal to see what changes you've made.
 - `git add .` lets you prepare all changes for commit.
 - `git commit -m 'message'` to commit your changes and the message to log what you did.
-- `git push` to push to your `Github` repo online. Heroku pipeline will then pull the latest changes and update itself.
+- `git push origin master` to push to your `Github` repo online. Heroku pipeline will then pull the latest changes and update itself.
+wait for 5-10mins.
+
+DONE. 
