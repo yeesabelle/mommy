@@ -12,7 +12,10 @@
 
 # Notes!
 
+
 - Open `public/index.html` to view your website locally.
+- `CMD + Space` and search for `terminal`
+- type `cd Desktop/atom/work/Mommy`
 - When you are done and happy with the changes, type `git status` in your terminal to see what changes you've made.
 - `git add .` lets you prepare all changes for commit.
 - `git commit -m 'message'` to commit your changes and the message to log what you did.
